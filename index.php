@@ -28,8 +28,9 @@
         $messageTemplate = "<b>Name: </b>".$fName." ".$lName. "<br>". "<b>Email: </b>". $email. "<br>". "<b>Message: </b><br>". $message;
         
         // Headers type and version
-        $headers = "MIME-Version: 1.0\r\n";
-        $headers .= "Content-Type: text/html\n";
+        $headers  = 'MIME-Version: 1.0' . "\r\n"
+        .'Content-type: text/html; charset=utf-8' . "\r\n"
+        .'From: robin61614500@gmail.com' . "\r\n";
 
         // Message send status
         $formNotice = array(
